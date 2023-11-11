@@ -13,12 +13,12 @@ class Book extends Model
 
     public function users()
     {
-      return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class);
     }
 
     public function ratings()
     {
-   return $this->hasMany(Rating::class);
+        return $this->hasMany(Rating::class);
     }
 
     public function reviews()
